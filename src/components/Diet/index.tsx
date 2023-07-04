@@ -50,12 +50,13 @@ const Diet: React.FC<DietProps> = ({ day }) => {
             <p>Dia de Carbo {diet}</p>
             <h2 className='font-bold text-2xl'>Plano de Refeições:</h2>
             <div className='text-left m-auto flex flex-col mt-2 mb-4 lg:w-1/2 gap-4 text-lg'>
-                <span><strong>Café da Manhã: </strong> {mealPlan[diet].breakfast}</span>
-                <span><strong>Almoço: </strong> {mealPlan[diet].lunch}</span>
-                <span><strong>Jantar: </strong> {mealPlan[diet].dinner}</span>
-                <span><strong>Lanches: </strong> {mealPlan[diet].snacks}</span>
+                <span><strong>Café da Manhã: </strong>{mealPlan[diet].breakfast}<br /></span>
+                <span><strong>Almoço: </strong>{mealPlan[diet].lunch}<br /></span>
+                <span><strong>Jantar: </strong>{mealPlan[diet].dinner}<br /></span>
+                <span><strong>Lanches: </strong>{mealPlan[diet].snacks}<br /></span>
                 <span>Total: {mealPlan[diet].total}</span>
             </div>
+
         </div>
     );
 }
