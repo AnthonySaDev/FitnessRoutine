@@ -12,7 +12,7 @@ interface WorkoutProps {
 
 const Workout: React.FC<WorkoutProps> = ({ day }) => {
   // Cria um array com o ciclo de treinos
-  const workoutCycle = ['Folga', 'Peito', 'Costas', 'Pernas', 'Ombros', 'Bracos', 'Folga'];
+  const workoutCycle = ['Folga', 'Peito', 'Costas', 'Pernas', 'Ombros', 'Braços', 'Folga'];
 
   // Obtém o dia da semana para o dia atual
   const now = new Date();
@@ -30,7 +30,7 @@ const Workout: React.FC<WorkoutProps> = ({ day }) => {
     'Costas': CostasImage,
     'Pernas': PernasImage,
     'Ombros': OmbrosImage,
-    'Bracos': BracosImage,
+    'Braços': BracosImage,
   };
 
   // Obtém a imagem do treino do dia
