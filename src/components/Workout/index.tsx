@@ -38,9 +38,9 @@ const Workout: React.FC<WorkoutProps> = ({ day }) => {
 
   return (
     <div className='flex flex-col gap-2 h-full items-center justify-between'>
-      <h1 className='bg-[#5546b6] text-3xl font-bold text-center my-2 w-full'>Treino do Dia:</h1>
+      <h1 className='bg-[#5546b6] text-3xl font-bold text-center w-full'>Treino do Dia:</h1>
       <p className='text-center font-semibold text-lg'>Dia {day}: {workout}</p>
-      <Image src={workoutImage} alt={workout} className='h-[420px] w-full object-cover'/>
+      <Image src={workoutImage} alt={workout} className='h-[450px] w-full object-cover'/>
     </div>
   );
 }
