@@ -49,7 +49,7 @@ const Diet: React.FC<DietProps> = ({ day }) => {
             <h1 className='bg-[#5546b6] text-3xl font-bold'>Dieta</h1>
             <p>Dia de Carbo {diet}</p>
             <h2 className='font-bold text-2xl'>Plano de Refeições:</h2>
-            <div className='text-left m-auto flex flex-col mt-2 mb-4 lg:w-1/2 gap-4 text-lg'>
+            <div className='text-left m-auto flex flex-col mt-2 mb-4 lg:w-1/2 gap-4 text-lg px-4'>
                 <span><strong>Café da Manhã: </strong>{mealPlan[diet].breakfast}<br /></span>
                 <span><strong>Almoço: </strong>{mealPlan[diet].lunch}<br /></span>
                 <span><strong>Jantar: </strong>{mealPlan[diet].dinner}<br /></span>
