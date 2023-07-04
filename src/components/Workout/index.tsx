@@ -1,10 +1,10 @@
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
+import BracosImage from '../../../public/bracos.png';
 import CostasImage from '../../../public/costas.png';
 import FolgaImage from '../../../public/folga.png';
 import OmbrosImage from '../../../public/ombros.png';
 import PeitoImage from '../../../public/peito.png';
-import BracosImage from '../../../public/bracos.png';
 import PernasImage from '../../../public/pernas.png';
 interface WorkoutProps {
   day: number;
@@ -37,10 +37,10 @@ const Workout: React.FC<WorkoutProps> = ({ day }) => {
   const workoutImage = workoutImages[workout];
 
   return (
-    <div className='flex flex-col gap-2 items-center justify-center'>
+    <div className='flex flex-col gap-2 h-full items-center justify-between'>
       <h1 className='bg-[#5546b6] text-3xl font-bold text-center my-2 w-full'>Treino do Dia:</h1>
       <p className='text-center font-semibold text-lg'>Dia {day}: {workout}</p>
-      <Image src={workoutImage} alt={workout} width={500} height={300}/>
+      <Image src={workoutImage} alt={workout} className='h-[450px] w-full object-cover'/>
     </div>
   );
 }

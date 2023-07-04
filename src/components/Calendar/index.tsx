@@ -30,7 +30,7 @@ const Calendar: React.FC = () => {
   
     return (
       <div>
-        <div className='flex justify-around text-xl py-2 font-semibold'>
+        <div className='flex justify-around text-xl pt-2 font-semibold'>
           <h1>Calendário</h1>
           <h2>
            <TimeNow/>
